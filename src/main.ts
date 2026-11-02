@@ -52,7 +52,7 @@ async function api<T>(path: string, body?: unknown): Promise<T> {
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <header class="header">
-    <a class="brand" href="/" aria-label="Little wings home"><img src="/favicon.svg" width="36" height="36" alt=""/><span>Little wings</span></a>
+    <a class="brand" href="${import.meta.env.BASE_URL}" aria-label="Little wings home"><img src="${import.meta.env.BASE_URL}favicon.svg" width="36" height="36" alt=""/><span>Little wings</span></a>
     <nav aria-label="Game"><button id="leaders" class="quiet">${icon('trophy')}<span>Leaderboard</span></button><div id="account"></div></nav>
   </header>
   <main class="game-shell">
